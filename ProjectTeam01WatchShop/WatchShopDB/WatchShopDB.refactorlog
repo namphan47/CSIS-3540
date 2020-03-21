@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="da48e94c-aa24-4661-aed9-fd8a3b7645cd" ChangeDateTime="03/21/2020 21:41:55">
+    <Property Name="ElementName" Value="[dbo].[Employee].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Employee]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EmpId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d483d6f2-c3e8-4667-91ef-87f44890a381" ChangeDateTime="03/21/2020 21:47:30">
+    <Property Name="ElementName" Value="[dbo].[MasterRole].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MasterRole]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Role_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6227e739-33f2-4ed9-b47c-777ded69ac6f" ChangeDateTime="03/21/2020 21:50:06">
+    <Property Name="ElementName" Value="[dbo].[Products].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Products]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ProductID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="97b2716e-99dd-4045-85d8-55545f200a7b" ChangeDateTime="03/21/2020 21:57:03">
+    <Property Name="ElementName" Value="[dbo].[Orders].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Orders]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Orders" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="82fb47ce-7e7f-4436-8434-507ffce38ee3" ChangeDateTime="03/21/2020 21:57:10">
+    <Property Name="ElementName" Value="[dbo].[Orders].[Orders]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Orders]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="OrdersID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="01fd193e-7d83-4609-83fb-9a904924ddd3" ChangeDateTime="03/21/2020 22:01:35">
+    <Property Name="ElementName" Value="[dbo].[Transactions].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Transactions]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TransactionID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e8ad81c7-67d8-4e52-80fd-6ccdd0261264" ChangeDateTime="03/21/2020 22:05:17">
+    <Property Name="ElementName" Value="[dbo].[Transactions].[Tax]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Transactions]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TaxAmount" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8572862f-6362-45ae-83e0-6978437d30d2" ChangeDateTime="03/21/2020 22:09:12">
+    <Property Name="ElementName" Value="[dbo].[MasterRole].[Role_ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MasterRole]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RoleID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ef70075e-d29e-41fa-a618-4761156e0136" ChangeDateTime="03/21/2020 22:09:15">
+    <Property Name="ElementName" Value="[dbo].[MasterRole].[Role_Type]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MasterRole]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RoleType" />
+  </Operation>
+</Operations>
