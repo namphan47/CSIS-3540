@@ -1,0 +1,11 @@
+C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopCodeFirstDB\bin\Debug\WatchShopCodeFirstDB.dll.config
+C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopCodeFirstDB\bin\Debug\WatchShopCodeFirstDB.dll
+C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopCodeFirstDB\bin\Debug\WatchShopCodeFirstDB.pdb
+C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopCodeFirstDB\bin\Debug\EntityFramework.dll
+C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopCodeFirstDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopCodeFirstDB\bin\Debug\EntityFramework.xml
+C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopCodeFirstDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopCodeFirstDB\obj\Debug\WatchShopCodeFirstDB.csprojAssemblyReference.cache
+C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopCodeFirstDB\obj\Debug\WatchShopCodeFirstDB.csproj.CopyComplete
+C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopCodeFirstDB\obj\Debug\WatchShopCodeFirstDB.dll
+C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopCodeFirstDB\obj\Debug\WatchShopCodeFirstDB.pdb
