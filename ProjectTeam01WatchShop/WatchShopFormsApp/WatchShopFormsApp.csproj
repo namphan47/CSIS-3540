@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SalesAssociateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesAssociateForm.Designer.cs">
+      <DependentUpon>SalesAssociateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WatchShopMainFormApp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     </Compile>
     <Compile Include="WatchShopApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SalesAssociateForm.resx">
+      <DependentUpon>SalesAssociateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WatchShopMainFormApp.resx">
       <DependentUpon>WatchShopMainFormApp.cs</DependentUpon>
     </EmbeddedResource>

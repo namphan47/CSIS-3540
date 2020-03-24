@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchShopFormsApp", "WatchS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchShopCodeFirstDB", "WatchShopCodeFirstDB\WatchShopCodeFirstDB.csproj", "{680E9D86-BAF5-479B-8BF5-0C2AA23FD142}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRegistrationFormsApp", "StudentRegistrationFormsApp\StudentRegistrationFormsApp.csproj", "{FAFCA244-2015-4678-B0E6-9BF2409236B4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,10 +29,6 @@ Global
 		{680E9D86-BAF5-479B-8BF5-0C2AA23FD142}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{680E9D86-BAF5-479B-8BF5-0C2AA23FD142}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{680E9D86-BAF5-479B-8BF5-0C2AA23FD142}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FAFCA244-2015-4678-B0E6-9BF2409236B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FAFCA244-2015-4678-B0E6-9BF2409236B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FAFCA244-2015-4678-B0E6-9BF2409236B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FAFCA244-2015-4678-B0E6-9BF2409236B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
