@@ -56,11 +56,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboardForm.Designer.cs">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SalesAssociateForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SalesAssociateForm.Designer.cs">
       <DependentUpon>SalesAssociateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreDashboardForm.Designer.cs">
+      <DependentUpon>StoreDashboardForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WatchShopMainFormApp.cs">
       <SubType>Form</SubType>
@@ -98,6 +110,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WatchShopDAL\WatchShopDAL.csproj">
+      <Project>{f9c1bf5e-e80f-41ec-8cd8-69dcedab84fc}</Project>
+      <Name>WatchShopDAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

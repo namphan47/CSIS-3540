@@ -38,9 +38,6 @@ C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\Watc
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopFormsApp.pdb
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\EntityFramework.dll
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\EntityFramework.SqlServer.dll
-C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopCodeFirstDB.dll
-C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopCodeFirstDB.pdb
-C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopCodeFirstDB.dll.config
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\EntityFramework.xml
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\EntityFramework.SqlServer.xml
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.csprojAssemblyReference.cache
@@ -51,3 +48,6 @@ C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\Watc
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.csproj.CopyComplete
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.exe
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.pdb
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopDAL.dll
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopDAL.pdb
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopDAL.dll.config

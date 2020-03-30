@@ -1,0 +1,11 @@
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\WatchShopDAL.dll.config
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\WatchShopDAL.dll
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\WatchShopDAL.pdb
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\EntityFramework.dll
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\EntityFramework.xml
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\obj\Debug\WatchShopDAL.csprojAssemblyReference.cache
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\obj\Debug\WatchShopDAL.csproj.CopyComplete
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\obj\Debug\WatchShopDAL.dll
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\obj\Debug\WatchShopDAL.pdb
