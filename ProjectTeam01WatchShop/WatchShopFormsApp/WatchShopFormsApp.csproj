@@ -99,12 +99,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WatchShopCodeFirstDB\WatchShopCodeFirstDB.csproj">
-      <Project>{680e9d86-baf5-479b-8bf5-0c2aa23fd142}</Project>
-      <Name>WatchShopCodeFirstDB</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

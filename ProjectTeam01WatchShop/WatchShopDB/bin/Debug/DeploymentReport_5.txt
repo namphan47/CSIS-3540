@@ -1,0 +1,40 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Orders]
+       [dbo].[Transactions]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Orders].[OrdersID] is being dropped, data loss could occur.
+       The table [dbo].[Products] is being dropped and re-created since all non-computed columns within the table have been
+         redefined.
+       The column [dbo].[Transactions].[TransactionID] is being dropped, data loss could occur.
+
+** User actions
+     Drop
+       [dbo].[FK_Orders_Employee] (Foreign Key)
+       [dbo].[FK_Orders_Products] (Foreign Key)
+       [dbo].[FK_Orders_Transactions] (Foreign Key)
+       [dbo].[FK_Transactions_Employee] (Foreign Key)
+       [dbo].[Products] (Table)
+     Table rebuild
+       [dbo].[Orders] (Table)
+       [dbo].[Transactions] (Table)
+     Create
+       [dbo].[Products] (Table)
+       [dbo].[Employees] (Table)
+       [dbo].[Roles] (Table)
+       [dbo].[FK_Orders_Employee] (Foreign Key)
+       [dbo].[FK_Orders_Products] (Foreign Key)
+       [dbo].[FK_Orders_Transactions] (Foreign Key)
+       [dbo].[FK_Transactions_Employee] (Foreign Key)
+       [dbo].[FK_Employee_Role] (Foreign Key)
+
+** Supporting actions
+
+The column [dbo].[Orders].[OrdersID] is being dropped, data loss could occur.
+The table [dbo].[Products] is being dropped and re-created since all non-computed columns within the table have been redefined.
+The column [dbo].[Transactions].[TransactionID] is being dropped, data loss could occur.
+

@@ -19,3 +19,13 @@ C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\
 C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\obj\Debug\WatchShopDB.sqlprojAssemblyReference.cache
 C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\obj\Debug\WatchShopDB.dll
 C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\obj\Debug\WatchShopDB.pdb
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\bin\Debug\WatchShopDB.dacpac
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\bin\Debug\WatchShopDB.dll
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\bin\Debug\WatchShopDB.pdb
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\obj\Debug\WatchShopDB.sqlprojAssemblyReference.cache
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\obj\Debug\WatchShopDB.dll
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\obj\Debug\WatchShopDB.pdb
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\obj\Debug\Model.xml
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\obj\Debug\refactor.xml
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\obj\Debug\postdeploy.sql
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDB\obj\Debug\predeploy.sql

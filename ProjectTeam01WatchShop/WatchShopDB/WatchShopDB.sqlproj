@@ -58,8 +58,8 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Employee.sql" />
-    <Build Include="MasterRole.sql" />
+    <Build Include="Employees.sql" />
+    <Build Include="Roles.sql" />
     <Build Include="Products.sql" />
     <Build Include="Orders.sql" />
     <Build Include="Transactions.sql" />
@@ -69,5 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="WatchShopDB.publish.xml" />
+    <None Include="WatchShopDB_1.publish.xml" />
+    <None Include="WatchShopDB_2.publish.xml" />
   </ItemGroup>
 </Project>
