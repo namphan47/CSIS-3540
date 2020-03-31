@@ -14,10 +14,17 @@ namespace WatchShopFormsApp
     public partial class StoreDashboardForm : Form
     {
         private WatchShopEntities context;
+        private CartForm cartForm;
         public StoreDashboardForm(WatchShopEntities context)
         {
             InitializeComponent();
             this.context = context;
+
+            buttonViewCart.Click += (s, e) =>
+            {
+                cartForm = new CartForm();
+                cartForm.Show();
+            };
         }
     }
 }
