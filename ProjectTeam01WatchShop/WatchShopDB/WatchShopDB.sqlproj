@@ -70,4 +70,7 @@
   <ItemGroup>
     <None Include="WatchShopDB.publish.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="ReSeedData.sql" />
+  </ItemGroup>
 </Project>
