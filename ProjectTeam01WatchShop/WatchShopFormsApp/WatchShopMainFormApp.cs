@@ -17,6 +17,7 @@ namespace WatchShopFormsApp
         private SalesAssociateForm salesAssociateForm;
         private AdminDashboardForm adminDashboardForm;
         private StoreDashboardForm storeDashboardForm;
+         private ManagerForm managerForm;
 
         public WatchShopMainFormApp()
         {
@@ -33,8 +34,14 @@ namespace WatchShopFormsApp
                 storeDashboardForm = new StoreDashboardForm(context);
                 storeDashboardForm.Show();
             };
+            buttonManager.Click += ButtonManager_Click;
         }
 
+        private void ButtonManager_Click(object sender, EventArgs e)
+        {
+            managerForm = new ManagerForm(context);
+            managerForm.Show();
+        }
         private void ButtonSalesAssociate_Click(object sender, EventArgs e)
         {
             salesAssociateForm = new SalesAssociateForm(context);
