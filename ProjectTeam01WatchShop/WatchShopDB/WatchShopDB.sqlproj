@@ -69,7 +69,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="WatchShopDB.publish.xml" />
-    <None Include="WatchShopDB_1.publish.xml" />
-    <None Include="WatchShopDB_2.publish.xml" />
   </ItemGroup>
 </Project>
