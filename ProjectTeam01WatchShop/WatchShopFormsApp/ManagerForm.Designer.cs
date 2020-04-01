@@ -30,6 +30,7 @@
         {
             this.btnRegisterEmployee = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnReportGeneration = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRegisterEmployee
@@ -38,7 +39,7 @@
             this.btnRegisterEmployee.Name = "btnRegisterEmployee";
             this.btnRegisterEmployee.Size = new System.Drawing.Size(142, 53);
             this.btnRegisterEmployee.TabIndex = 0;
-            this.btnRegisterEmployee.Text = "Register Employee";
+            this.btnRegisterEmployee.Text = "Employee Management";
             this.btnRegisterEmployee.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -51,11 +52,21 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Manager Screen";
             // 
+            // btnReportGeneration
+            // 
+            this.btnReportGeneration.Location = new System.Drawing.Point(452, 149);
+            this.btnReportGeneration.Name = "btnReportGeneration";
+            this.btnReportGeneration.Size = new System.Drawing.Size(134, 53);
+            this.btnReportGeneration.TabIndex = 2;
+            this.btnReportGeneration.Text = "Report Generation";
+            this.btnReportGeneration.UseVisualStyleBackColor = true;
+            // 
             // ManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnReportGeneration);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegisterEmployee);
             this.Name = "ManagerForm";
@@ -69,5 +80,6 @@
 
         private System.Windows.Forms.Button btnRegisterEmployee;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnReportGeneration;
     }
 }

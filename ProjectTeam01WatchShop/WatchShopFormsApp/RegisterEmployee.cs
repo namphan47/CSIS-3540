@@ -67,10 +67,10 @@ namespace WatchShopFormsApp
                 RoleId = 1
 
             };
-            var newRow = context.Set<WatchShopDAL.Employee>();
+            var newRow = context.Set<Employee>();
             newRow.Add(newEmp);
 
-           // context.Employees.Add(newEmp);
+           context.Employees.Add(newEmp);
             context.SaveChanges();
             
             dataGridViewDepartments.DataSource = context.Employees.Local.ToBindingList();
