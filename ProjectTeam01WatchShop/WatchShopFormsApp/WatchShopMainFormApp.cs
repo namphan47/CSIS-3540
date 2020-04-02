@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,12 +19,16 @@ namespace WatchShopFormsApp
         private SalesAssociateForm salesAssociateForm;
         private AdminDashboardForm adminDashboardForm;
         private StoreDashboardForm storeDashboardForm;
-         private ManagerForm managerForm;
+        private ManagerForm managerForm;
 
         public WatchShopMainFormApp()
         {
             InitializeComponent();
             context = new WatchShopEntities();
+
+            // seed data
+            SeedRegistrationDataTables();
+
             buttonSalesAssociate.Click += ButtonSalesAssociate_Click;
             buttonAdmin.Click += (s, e) =>
             {
@@ -35,6 +41,14 @@ namespace WatchShopFormsApp
                 storeDashboardForm.Show();
             };
             buttonManager.Click += ButtonManager_Click;
+        }
+
+        private void SeedRegistrationDataTables()
+        {
+            // set up database log to write to output window in VS
+            context.Database.Log = (s => Debug.Write(s));
+                    
+            context.Products.Load();
         }
 
         private void ButtonManager_Click(object sender, EventArgs e)

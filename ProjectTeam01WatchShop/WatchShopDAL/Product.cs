@@ -27,7 +27,6 @@ namespace WatchShopDAL
 
         public int? Price { get; set; }
 
-        [Required]
         [StringLength(50)]
         public string Image { get; set; }
 

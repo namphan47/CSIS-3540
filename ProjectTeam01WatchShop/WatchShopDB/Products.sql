@@ -5,5 +5,5 @@
     [Description] VARCHAR(50) NULL, 
     [Quantity] INT NULL, 
     [Price] INT NULL, 
-    [Image] VARCHAR(50) NOT NULL
+    [Image] VARCHAR(50) NULL
 )

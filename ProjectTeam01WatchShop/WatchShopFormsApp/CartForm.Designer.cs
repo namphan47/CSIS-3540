@@ -30,6 +30,7 @@
         {
             this.dataGridViewProduct = new System.Windows.Forms.DataGridView();
             this.buttonCheckOut = new System.Windows.Forms.Button();
+            this.buttonRemove = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,11 +51,21 @@
             this.buttonCheckOut.Text = "Check  out";
             this.buttonCheckOut.UseVisualStyleBackColor = true;
             // 
+            // buttonRemove
+            // 
+            this.buttonRemove.Location = new System.Drawing.Point(12, 331);
+            this.buttonRemove.Name = "buttonRemove";
+            this.buttonRemove.Size = new System.Drawing.Size(75, 23);
+            this.buttonRemove.TabIndex = 23;
+            this.buttonRemove.Text = "Remove";
+            this.buttonRemove.UseVisualStyleBackColor = true;
+            // 
             // CartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(448, 366);
+            this.Controls.Add(this.buttonRemove);
             this.Controls.Add(this.buttonCheckOut);
             this.Controls.Add(this.dataGridViewProduct);
             this.Name = "CartForm";
@@ -68,5 +79,6 @@
 
         private System.Windows.Forms.DataGridView dataGridViewProduct;
         private System.Windows.Forms.Button buttonCheckOut;
+        private System.Windows.Forms.Button buttonRemove;
     }
 }

@@ -8,7 +8,7 @@ namespace WatchShopDAL
     public partial class WatchShopEntities : DbContext
     {
         public WatchShopEntities()
-            : base("name=Entities")
+            : base("name=WatchShopEntities")
         {
         }
 

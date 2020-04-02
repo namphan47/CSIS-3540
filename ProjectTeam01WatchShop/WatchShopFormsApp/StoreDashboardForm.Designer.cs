@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonNew = new System.Windows.Forms.Button();
-            this.textBoxPrice = new System.Windows.Forms.TextBox();
+            this.buttonAddToCart = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,24 +38,21 @@
             this.labelBranch = new System.Windows.Forms.Label();
             this.labelDescription = new System.Windows.Forms.Label();
             this.labelPrice = new System.Windows.Forms.Label();
+            this.numericUpDownQuantity = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.labelIncart = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantity)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonNew
+            // buttonAddToCart
             // 
-            this.buttonNew.Location = new System.Drawing.Point(626, 291);
-            this.buttonNew.Name = "buttonNew";
-            this.buttonNew.Size = new System.Drawing.Size(75, 23);
-            this.buttonNew.TabIndex = 21;
-            this.buttonNew.Text = "Add To Cart";
-            this.buttonNew.UseVisualStyleBackColor = true;
-            // 
-            // textBoxPrice
-            // 
-            this.textBoxPrice.Location = new System.Drawing.Point(626, 238);
-            this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(135, 20);
-            this.textBoxPrice.TabIndex = 19;
+            this.buttonAddToCart.Location = new System.Drawing.Point(626, 291);
+            this.buttonAddToCart.Name = "buttonAddToCart";
+            this.buttonAddToCart.Size = new System.Drawing.Size(75, 23);
+            this.buttonAddToCart.TabIndex = 21;
+            this.buttonAddToCart.Text = "Add To Cart";
+            this.buttonAddToCart.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -142,17 +138,56 @@
             this.labelPrice.TabIndex = 25;
             this.labelPrice.Text = "[data]";
             // 
+            // numericUpDownQuantity
+            // 
+            this.numericUpDownQuantity.Location = new System.Drawing.Point(626, 239);
+            this.numericUpDownQuantity.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownQuantity.Name = "numericUpDownQuantity";
+            this.numericUpDownQuantity.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownQuantity.TabIndex = 26;
+            this.numericUpDownQuantity.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(623, 382);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(81, 13);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Product In Cart:";
+            this.label5.UseMnemonic = false;
+            // 
+            // labelIncart
+            // 
+            this.labelIncart.AutoSize = true;
+            this.labelIncart.Location = new System.Drawing.Point(710, 382);
+            this.labelIncart.Name = "labelIncart";
+            this.labelIncart.Size = new System.Drawing.Size(13, 13);
+            this.labelIncart.TabIndex = 29;
+            this.labelIncart.Text = "0";
+            this.labelIncart.UseMnemonic = false;
+            // 
             // StoreDashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelIncart);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.numericUpDownQuantity);
             this.Controls.Add(this.labelPrice);
             this.Controls.Add(this.labelDescription);
             this.Controls.Add(this.labelBranch);
             this.Controls.Add(this.buttonViewCart);
-            this.Controls.Add(this.buttonNew);
-            this.Controls.Add(this.textBoxPrice);
+            this.Controls.Add(this.buttonAddToCart);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -161,6 +196,7 @@
             this.Name = "StoreDashboardForm";
             this.Text = "StoreDashboardForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,8 +204,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonNew;
-        private System.Windows.Forms.TextBox textBoxPrice;
+        private System.Windows.Forms.Button buttonAddToCart;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -179,5 +214,8 @@
         private System.Windows.Forms.Label labelBranch;
         private System.Windows.Forms.Label labelDescription;
         private System.Windows.Forms.Label labelPrice;
+        private System.Windows.Forms.NumericUpDown numericUpDownQuantity;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelIncart;
     }
 }

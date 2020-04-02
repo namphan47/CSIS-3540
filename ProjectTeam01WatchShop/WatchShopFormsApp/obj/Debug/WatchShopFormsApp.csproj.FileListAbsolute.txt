@@ -53,3 +53,6 @@ C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\Watc
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopDAL.dll.config
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.AdminDashboardForm.resources
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.StoreDashboardForm.resources
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.CartForm.resources
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.ManagerForm.resources
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.RegisterEmployee.resources

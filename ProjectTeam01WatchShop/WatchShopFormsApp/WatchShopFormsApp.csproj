@@ -68,6 +68,18 @@
     <Compile Include="CartForm.Designer.cs">
       <DependentUpon>CartForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerForm.Designer.cs">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterEmployee.Designer.cs">
+      <DependentUpon>RegisterEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="SalesAssociateForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CartForm.resx">
       <DependentUpon>CartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerForm.resx">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterEmployee.resx">
+      <DependentUpon>RegisterEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SalesAssociateForm.resx">
       <DependentUpon>SalesAssociateForm.cs</DependentUpon>
@@ -128,7 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WatchShopDAL\WatchShopDAL.csproj">
-      <Project>{f9c1bf5e-e80f-41ec-8cd8-69dcedab84fc}</Project>
+      <Project>{c08fe00f-7d2a-46cc-b71a-e4a4925bc419}</Project>
       <Name>WatchShopDAL</Name>
     </ProjectReference>
   </ItemGroup>

@@ -18,3 +18,6 @@ INSERT INTO Roles([Type]) VALUES('Sale1');
 INSERT INTO Roles([Type]) VALUES('Manager');
 
 go
+
+INSERT INTO Products([Brand],[Description],[Quantity],[Price]) VALUES('b','adf',33,334.3);
+INSERT INTO Products([Brand],[Description],[Quantity],[Price]) VALUES('c','gfdf',333,3.3);
