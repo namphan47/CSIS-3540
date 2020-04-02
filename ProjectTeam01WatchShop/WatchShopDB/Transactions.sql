@@ -1,11 +1,10 @@
 ﻿CREATE TABLE [dbo].[Transactions]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [EmpCashierID] INT NULL, 
-    [ProductTotal] DECIMAL NOT NULL, 
-    [TaxAmount] DECIMAL NOT NULL, 
-    [OverallTotal] DECIMAL NOT NULL, 
+    [EmpCashierID] INT NULL,     
     [CustomerEmail] VARCHAR(50) NULL, 
-    [TotalQuantity] INT NOT NULL, 
+    [SubTotal] DECIMAL NOT NULL, 
+    [TaxAmount] DECIMAL NOT NULL, 
+    [TotalAmount] DECIMAL NOT NULL, 
     CONSTRAINT [FK_Transactions_Employee] FOREIGN KEY ([EmpCashierID]) REFERENCES [Employees]([Id])
 )

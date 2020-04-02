@@ -44,7 +44,7 @@ namespace WatchShopDAL
             modelBuilder.Entity<Employee>()
                 .HasMany(e => e.Orders)
                 .WithRequired(e => e.Employee)
-                .HasForeignKey(e => e.EmpId)
+                .HasForeignKey(e => e.SalerId)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Employee>()
@@ -61,6 +61,10 @@ namespace WatchShopDAL
                 .IsUnicode(false);
 
             modelBuilder.Entity<Product>()
+                .Property(e => e.Price)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<Product>()
                 .Property(e => e.Image)
                 .IsUnicode(false);
 
@@ -74,7 +78,11 @@ namespace WatchShopDAL
                 .IsUnicode(false);
 
             modelBuilder.Entity<Transaction>()
-                .Property(e => e.ProductTotal)
+                .Property(e => e.CustomerEmail)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Transaction>()
+                .Property(e => e.SubTotal)
                 .HasPrecision(18, 0);
 
             modelBuilder.Entity<Transaction>()
@@ -82,12 +90,8 @@ namespace WatchShopDAL
                 .HasPrecision(18, 0);
 
             modelBuilder.Entity<Transaction>()
-                .Property(e => e.OverallTotal)
+                .Property(e => e.TotalAmount)
                 .HasPrecision(18, 0);
-
-            modelBuilder.Entity<Transaction>()
-                .Property(e => e.CustomerEmail)
-                .IsUnicode(false);
 
             modelBuilder.Entity<Transaction>()
                 .HasMany(e => e.Orders)

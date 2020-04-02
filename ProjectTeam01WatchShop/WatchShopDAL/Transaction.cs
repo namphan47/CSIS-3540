@@ -18,16 +18,14 @@ namespace WatchShopDAL
 
         public int? EmpCashierID { get; set; }
 
-        public decimal ProductTotal { get; set; }
-
-        public decimal TaxAmount { get; set; }
-
-        public decimal OverallTotal { get; set; }
-
         [StringLength(50)]
         public string CustomerEmail { get; set; }
 
-        public int TotalQuantity { get; set; }
+        public decimal SubTotal { get; set; }
+
+        public decimal TaxAmount { get; set; }
+
+        public decimal TotalAmount { get; set; }
 
         public virtual Employee Employee { get; set; }
 

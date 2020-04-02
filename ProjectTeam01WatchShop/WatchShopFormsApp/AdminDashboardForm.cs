@@ -16,6 +16,7 @@ namespace WatchShopFormsApp
     {
         private WatchShopEntities context;
         private Product selectedProduct;
+        private BindingList<Product> list;
         public AdminDashboardForm(WatchShopEntities context)
         {
             InitializeComponent();
@@ -35,7 +36,22 @@ namespace WatchShopFormsApp
             if (dataGridViewProduct.SelectedRows.Count > 0)
             {
                 // edit
-
+                if (textBoxBranch.Text.Equals(""))
+                {
+                    MessageBox.Show("Branch cannot be empty");
+                }
+                else
+                {
+                    Product product = list
+                        .Where(x => x.Id == int.Parse(dataGridViewProduct.SelectedRows[0].Cells[0].Value.ToString()))
+                        .FirstOrDefault();
+                    product.Brand = textBoxBranch.Text;
+                    product.Description = textBoxDescription.Text;
+                    product.Quantity = int.Parse(numericUpDownQuantity.Value.ToString());
+                    product.Price = decimal.Parse(numericUpDownPrice.Value.ToString());
+                    context.SaveChanges();
+                    dataGridViewProduct.Refresh();
+                }
             }
             else
             {
@@ -50,7 +66,9 @@ namespace WatchShopFormsApp
                     product.Brand = textBoxBranch.Text;
                     product.Description = textBoxDescription.Text;
                     product.Quantity = int.Parse(numericUpDownQuantity.Value.ToString());
-                    product.Price = double.Parse(numericUpDownPrice.Value.ToString());
+                    product.Price = decimal.Parse(numericUpDownPrice.Value.ToString());
+                    context.Products.Local.Add(product);
+                    context.SaveChanges();
                 }
             }
         }
@@ -60,8 +78,8 @@ namespace WatchShopFormsApp
             labelId.Text = "[new]";
             textBoxBranch.Clear();
             textBoxDescription.Clear();
-            numericUpDownQuantity.ResetText();
-            numericUpDownPrice.ResetText();
+            numericUpDownQuantity.Value = 0;
+            numericUpDownPrice.Value = 0;
 
             dataGridViewProduct.ClearSelection();
         }
@@ -71,7 +89,8 @@ namespace WatchShopFormsApp
         /// </summary>
         private void InitTable()
         {
-            dataGridViewProduct.DataSource = context.Products.Local.ToBindingList();
+            list = context.Products.Local.ToBindingList();
+            dataGridViewProduct.DataSource = list;            
             dataGridViewProduct.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewProduct.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridViewProduct.MultiSelect = false;
