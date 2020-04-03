@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Orders]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [Quantity] INT NOT NULL, 
+    [Quantity] INT NOT NULL DEFAULT 0, 
     [TransactionId] INT NOT NULL, 
     [SalerId] INT NOT NULL, 
     [ProductId] INT NOT NULL, 

@@ -30,13 +30,32 @@ namespace WatchShopFormsApp
 
             buttonViewCart.Click += (s, e) =>
             {
-                cartForm = new CartForm(selectedProductList);
-                cartForm.Show();
+                if (selectedProductList.Count > 0)
+                {
+                    cartForm = new CartForm(context, ref selectedProductList);
+                    cartForm.Show();
+                    cartForm.FormClosing += new FormClosingEventHandler(Inicio_FormClosing_1);
+                }
+                else
+                {
+                    MessageBox.Show("Cart is empty");
+                }
+
             };
 
             buttonAddToCart.Click += OnAddToCart;
-
-
+                       
+        }
+        /// <summary>
+        /// on close form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Inicio_FormClosing_1(object sender, FormClosingEventArgs e)
+        {
+            //Things while closing
+            dataGridViewProduct.Refresh();
+            labelIncart.Text = selectedProductList.Count + "";
         }
         /// <summary>
         /// initialize table
@@ -74,7 +93,11 @@ namespace WatchShopFormsApp
             }
 
         }
-
+        /// <summary>
+        /// add select product into cart
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnAddToCart(object sender, EventArgs e)
         {
             if (selectedProduct != null)

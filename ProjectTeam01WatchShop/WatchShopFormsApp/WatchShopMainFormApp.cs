@@ -49,6 +49,7 @@ namespace WatchShopFormsApp
             context.Database.Log = (s => Debug.Write(s));
                     
             context.Products.Load();
+            context.Employees.Load();
         }
 
         private void ButtonManager_Click(object sender, EventArgs e)

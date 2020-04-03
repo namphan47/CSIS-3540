@@ -14,10 +14,16 @@ use WatchShopDB;
 go 
 
 INSERT INTO Roles([Type]) VALUES('Admin');
-INSERT INTO Roles([Type]) VALUES('Sale1');
+INSERT INTO Roles([Type]) VALUES('Saler');
 INSERT INTO Roles([Type]) VALUES('Manager');
 
 go
 
 INSERT INTO Products([Brand],[Description],[Quantity],[Price]) VALUES('b','adf',33,334.3);
 INSERT INTO Products([Brand],[Description],[Quantity],[Price]) VALUES('c','gfdf',333,3.3);
+
+go
+
+INSERT INTO Employees([Name], [RoleId]) VALUES('Nam',2);
+
+go

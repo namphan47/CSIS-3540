@@ -23,9 +23,9 @@ namespace WatchShopDAL
         [StringLength(50)]
         public string Description { get; set; }
 
-        public int? Quantity { get; set; }
+        public int Quantity { get; set; }
 
-        public decimal? Price { get; set; }
+        public decimal Price { get; set; }
 
         [StringLength(50)]
         public string Image { get; set; }
