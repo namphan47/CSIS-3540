@@ -15,79 +15,96 @@ namespace WatchShopFormsApp
     public partial class RegisterEmployee : Form
     {
         private WatchShopEntities context;
+        private UpdateEmployee updateEmployee;
+        private Role selectedRoles;
+        private AddEmployee addEmployee;
         public RegisterEmployee(WatchShopEntities context)
         {
             InitializeComponent();
-            this.context = new WatchShopEntities();
-            renderListBox();
-            InitializeOthers();
+            this.context = context;
+            this.Load += RegisterEmployee_Load;
+            InititializeDataGridView();
+            InititializeOthers();
+
         }
 
-        public void renderListBox()
+        private void InititializeOthers()
         {
-            // var empRolesList = context.MasterRoles.Local.Select(x => x.RoleType);
-            List<String> empRolesList = new List<String>();
-            empRolesList.Add("Sales Associate");
-            empRolesList.Add("Manager");
-            empRolesList.Add("Admin");
-
-            listBoxEmpRole.Items.Clear();
-            listBoxEmpRole.Items.AddRange(empRolesList.ToArray());
-
-            /*// clear selectedDepartment
-            selectedDepartment = null;*/
+            addButton.Click += AddButton_Click;
+            updateButton.Click += ButtonUpdate_Click;
+            dropButton.Click += DropButton_Click;
         }
 
-        private void InitializeOthers()
+        private void DropButton_Click(object sender, EventArgs e)
         {
-            buttonRegister.Click += ButtonRegister_Click;
+            foreach (DataGridViewRow row in dataGridViewDepartments.SelectedRows)
+            {
+                Employee employeeRecord = row.DataBoundItem as Employee;
+                context.Employees.Remove(employeeRecord);
+                context.SaveChanges();
+            }
+            //SaveChangesAndUpdateRegistration();
         }
 
-        private void ButtonRegister_Click(object sender, EventArgs e)
-        { 
+        private void RegisterEmployee_Load(object sender, EventArgs e)
+        {
+            SeedRegistrationDataTables();
+        }
+
+        private void SeedRegistrationDataTables()
+        {
+
+            // reset the db
+            //context.Database.Delete();
+            //context.Database.Create();
+
+            //context.SaveChanges();
+
+            // another way to reinitialize the database, resetting everything and zeroing out data
+
+            //Database.SetInitializer(new DropCreateDatabaseAlways<StudentRegistrationEntities>());
+            //context.Database.Initialize(true);        
+            context.Roles.Load();
+            context.Employees.Load();
 
 
-           /*Role masterRole = new Role
-            {
-                Id = context.Roles.Local.ToArray().Length + 1,
-                Type = "Ronak"
-            };
-            
-            context.Roles.Add(masterRole);
-            context.SaveChanges();*/
-          
-            Employee newEmp = new Employee
-            {
-                Id = context.Employees.Local.ToArray().Length + 1,
-                Name = textBoxEmpName.Text,
-                Address = textBoxEmpAddress.Text,
-                Password = textBoxPassword.Text,
-                Email = "ronak@gmail.com",
-                PhoneNo = "778",
-                RoleId = 1
+        }
 
-            };
-            var newRow = context.Set<Employee>();
-            newRow.Add(newEmp);
+       
 
-           context.Employees.Add(newEmp);
-            context.SaveChanges();
-            
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            addEmployee = new AddEmployee(context);
+            addEmployee.Show();
+        }
+
+        private void ButtonUpdate_Click(object sender, EventArgs e)
+        {
+            updateEmployee = new UpdateEmployee(context);
+            updateEmployee.Show();
+        }
+
+        private void InititializeDataGridView()
+        {
             dataGridViewDepartments.DataSource = context.Employees.Local.ToBindingList();
+            dataGridViewDepartments.Columns["Orders"].Visible = false;
+            dataGridViewDepartments.Columns["Transactions"].Visible = false;
+            //dataGridViewDepartments.Columns["RoleID"].Visible = false;
             dataGridViewDepartments.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewDepartments.AllowUserToAddRows = false;
             // don't let users edit the Department key
             //dataGridViewDepartments.RowEnter += (s, e) => KeysReadOnly(s, e, "DepartmentId");
-           // dataGridViewDepartments.Columns["Courses"].Visible = false;
+            // dataGridViewDepartments.Columns["Courses"].Visible = false;
             //dataGridViewDepartments.Columns["Students"].Visible = false;
             // this must be done before user deletes row to cascade. only needed when using composite keys
             // UserDeletedRow will not work, as this will try to updated Courses which will crash
-          //  dataGridViewDepartments.UserDeletingRow += (s, e) => DeletingDepartment(e);
+            //  dataGridViewDepartments.UserDeletingRow += (s, e) => DeletingDepartment(e);
             //dataGridViewDepartments.CellValueChanged += (s, e) => AddOrUpdateDepartment(e);
             //dataGridViewDepartments.RowValidated += (s, e) => AddOrUpdateDepartment(e);
 
             //dataGridViewStudentRegistration.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             //dataGridViewStudentRegistration.ReadOnly = true;
         }
+       
     }
 }
