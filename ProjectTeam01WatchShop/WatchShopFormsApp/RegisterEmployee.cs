@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,6 @@ namespace WatchShopFormsApp
     {
         private WatchShopEntities context;
         private UpdateEmployee updateEmployee;
-        private Role selectedRoles;
         private AddEmployee addEmployee;
         public RegisterEmployee(WatchShopEntities context)
         {
@@ -32,19 +32,9 @@ namespace WatchShopFormsApp
         {
             addButton.Click += AddButton_Click;
             updateButton.Click += ButtonUpdate_Click;
-            dropButton.Click += DropButton_Click;
         }
 
-        private void DropButton_Click(object sender, EventArgs e)
-        {
-            foreach (DataGridViewRow row in dataGridViewDepartments.SelectedRows)
-            {
-                Employee employeeRecord = row.DataBoundItem as Employee;
-                context.Employees.Remove(employeeRecord);
-                context.SaveChanges();
-            }
-            //SaveChangesAndUpdateRegistration();
-        }
+        
 
         private void RegisterEmployee_Load(object sender, EventArgs e)
         {
@@ -86,25 +76,92 @@ namespace WatchShopFormsApp
 
         private void InititializeDataGridView()
         {
-            dataGridViewDepartments.DataSource = context.Employees.Local.ToBindingList();
-            dataGridViewDepartments.Columns["Orders"].Visible = false;
-            dataGridViewDepartments.Columns["Transactions"].Visible = false;
-            //dataGridViewDepartments.Columns["RoleID"].Visible = false;
-            dataGridViewDepartments.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewDepartments.AllowUserToAddRows = false;
-            // don't let users edit the Department key
-            //dataGridViewDepartments.RowEnter += (s, e) => KeysReadOnly(s, e, "DepartmentId");
-            // dataGridViewDepartments.Columns["Courses"].Visible = false;
-            //dataGridViewDepartments.Columns["Students"].Visible = false;
-            // this must be done before user deletes row to cascade. only needed when using composite keys
-            // UserDeletedRow will not work, as this will try to updated Courses which will crash
-            //  dataGridViewDepartments.UserDeletingRow += (s, e) => DeletingDepartment(e);
-            //dataGridViewDepartments.CellValueChanged += (s, e) => AddOrUpdateDepartment(e);
-            //dataGridViewDepartments.RowValidated += (s, e) => AddOrUpdateDepartment(e);
-
-            //dataGridViewStudentRegistration.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            //dataGridViewStudentRegistration.ReadOnly = true;
+            employeesDataGridView.DataSource = context.Employees.Local.ToBindingList();
+            employeesDataGridView.Columns["Orders"].Visible = false;
+            employeesDataGridView.Columns["Transactions"].Visible = false;
+            employeesDataGridView.Columns["Role"].Visible = false;
+            empRolesDataGridView.DataSource = context.Roles.Local.ToBindingList();
+            empRolesDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            empRolesDataGridView.RowEnter += (s, e) => KeysReadOnly(s, e, "Id");
+            empRolesDataGridView.CellValueChanged += (s, e) => AddOrUpdateDepartment(e);
+            empRolesDataGridView.RowValidated += (s, e) => AddOrUpdateDepartment(e);
+            empRolesDataGridView.Columns["Employees"].Visible = false;
+            employeesDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            employeesDataGridView.AllowUserToAddRows = false;
+            
         }
-       
+
+        public void KeysReadOnly(object s, DataGridViewCellEventArgs e, params string[] keyNames)
+        {
+            DataGridView dgv = s as DataGridView;
+            DataGridViewRow row = dgv.Rows[e.RowIndex];
+
+            // if a new row, allow edits, otherwise make the key cells readonly
+
+            if (row.IsNewRow)
+                row.ReadOnly = false;
+            else
+            {
+                foreach (string keyName in keyNames)
+                {
+                    row.Cells[keyName].ReadOnly = true;
+                }
+            }
+        }
+
+        private void AddOrUpdateDepartment(DataGridViewCellEventArgs e)
+        {
+           
+            Role role = context.Roles.Local.ElementAtOrDefault(e.RowIndex);
+
+            
+            if (context.ChangeTracker.HasChanges() == false || role == null)
+                return;
+
+            
+
+            DbEntityEntry entry = context.Entry<Role>(role);
+
+            if (entry.State == EntityState.Added)
+            {
+                if (context.Roles.FirstOrDefault(d => d.Id == role.Id) != null
+                    || role.Type == null || role.Type == null)
+                {
+                    MessageBox.Show("Roles cannot be added, already exists"
+                                                + role);
+                    context.Roles.Remove(role);
+                }
+                context.SaveChanges();
+                empRolesDataGridView.Refresh();
+            }
+            else if (entry.State == EntityState.Modified)
+            {
+                if (role.Type == null)
+                {
+                    MessageBox.Show("Roles cannot be updated, Role name is missing: "
+                                                + role);
+                    entry.State = EntityState.Unchanged;
+                }
+                SaveChangesAndUpdateRegistration();
+            }
+        }
+
+        private void SaveChangesAndUpdateRegistration()
+        {
+
+            // if there are changes, log the fact, otherwise there are none and exit
+
+            try
+            {
+                context.SaveChanges();
+            }
+            catch
+            {
+                MessageBox.Show("Error: Cannot update the database - exiting");
+                Environment.Exit(1);
+            }
+
+        }
+
     }
 }

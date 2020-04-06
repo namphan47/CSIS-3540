@@ -4,7 +4,7 @@
     [Name] VARCHAR(50) NULL, 
     [Address] VARCHAR(100) NULL, 
     [Password] VARCHAR(50) NULL, 
-    [RoleId] INT NULL, 
+    [RoleId] INT NOT NULL, 
     [PhoneNo] VARCHAR(50) NULL, 
     [Email] VARCHAR(50) NULL, 
     CONSTRAINT [FK_Employee_Role] FOREIGN KEY ([RoleId]) REFERENCES [Roles]([Id])

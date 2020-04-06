@@ -15,24 +15,6 @@ C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopFormsApp\ob
 C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.csproj.CopyComplete
 C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.exe
 C:\Data1\Client-Server Systems\Final\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.pdb
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopFormsApp.exe.config
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopFormsApp.exe
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopFormsApp.pdb
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\EntityFramework.dll
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\EntityFramework.SqlServer.dll
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopCodeFirstDB.dll
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopCodeFirstDB.pdb
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopCodeFirstDB.dll.config
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\EntityFramework.xml
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\EntityFramework.SqlServer.xml
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.csprojAssemblyReference.cache
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.SalesAssociateForm.resources
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.WatchShopMainFormApp.resources
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.Properties.Resources.resources
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.csproj.GenerateResource.cache
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.csproj.CopyComplete
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.exe
-C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.pdb
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopFormsApp.exe.config
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopFormsApp.exe
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopFormsApp.pdb
@@ -56,3 +38,31 @@ C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\Watc
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.CartForm.resources
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.ManagerForm.resources
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.RegisterEmployee.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopFormsApp.exe.config
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopFormsApp.exe
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopFormsApp.pdb
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\EntityFramework.dll
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopDAL.dll
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopDAL.pdb
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\WatchShopDAL.dll.config
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\EntityFramework.xml
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.csprojAssemblyReference.cache
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.AddEmployee.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.AdminDashboardForm.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.CartForm.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.ManagerForm.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.RegisterEmployee.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.SalesAssociateForm.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.StoreDashboardForm.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.UpdateEmployee.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.WatchShopMainFormApp.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.Properties.Resources.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.csproj.GenerateResource.cache
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.csproj.CopyComplete
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.exe
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.pdb
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.UpdateEmpPersonalDetails.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.SalesReport.resources
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.ManagerStoreReport.resources

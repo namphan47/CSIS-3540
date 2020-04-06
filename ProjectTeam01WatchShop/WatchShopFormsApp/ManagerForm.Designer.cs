@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegisterEmployee = new System.Windows.Forms.Button();
+            this.registerEmployeeBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnReportGeneration = new System.Windows.Forms.Button();
+            this.reportGenerationBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnRegisterEmployee
+            // registerEmployeeBtn
             // 
-            this.btnRegisterEmployee.Location = new System.Drawing.Point(119, 149);
-            this.btnRegisterEmployee.Name = "btnRegisterEmployee";
-            this.btnRegisterEmployee.Size = new System.Drawing.Size(142, 53);
-            this.btnRegisterEmployee.TabIndex = 0;
-            this.btnRegisterEmployee.Text = "Employee Management";
-            this.btnRegisterEmployee.UseVisualStyleBackColor = true;
+            this.registerEmployeeBtn.Location = new System.Drawing.Point(119, 149);
+            this.registerEmployeeBtn.Name = "registerEmployeeBtn";
+            this.registerEmployeeBtn.Size = new System.Drawing.Size(142, 53);
+            this.registerEmployeeBtn.TabIndex = 0;
+            this.registerEmployeeBtn.Text = "Employee Management";
+            this.registerEmployeeBtn.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -52,23 +52,23 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Manager Screen";
             // 
-            // btnReportGeneration
+            // reportGenerationBtn
             // 
-            this.btnReportGeneration.Location = new System.Drawing.Point(452, 149);
-            this.btnReportGeneration.Name = "btnReportGeneration";
-            this.btnReportGeneration.Size = new System.Drawing.Size(134, 53);
-            this.btnReportGeneration.TabIndex = 2;
-            this.btnReportGeneration.Text = "Report Generation";
-            this.btnReportGeneration.UseVisualStyleBackColor = true;
+            this.reportGenerationBtn.Location = new System.Drawing.Point(452, 149);
+            this.reportGenerationBtn.Name = "reportGenerationBtn";
+            this.reportGenerationBtn.Size = new System.Drawing.Size(134, 53);
+            this.reportGenerationBtn.TabIndex = 2;
+            this.reportGenerationBtn.Text = "Report Generation";
+            this.reportGenerationBtn.UseVisualStyleBackColor = true;
             // 
             // ManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnReportGeneration);
+            this.Controls.Add(this.reportGenerationBtn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnRegisterEmployee);
+            this.Controls.Add(this.registerEmployeeBtn);
             this.Name = "ManagerForm";
             this.Text = "Manager";
             this.ResumeLayout(false);
@@ -78,8 +78,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnRegisterEmployee;
+        private System.Windows.Forms.Button registerEmployeeBtn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnReportGeneration;
+        private System.Windows.Forms.Button reportGenerationBtn;
     }
 }

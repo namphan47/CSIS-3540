@@ -14,12 +14,20 @@ namespace WatchShopFormsApp
     public partial class ManagerForm : Form
     {
         private WatchShopEntities context;
+        private ManagerStoreReport managerStoreReport;
         private RegisterEmployee registerEmployee;
         public ManagerForm(WatchShopEntities context)
         {
             InitializeComponent();
             this.context = context;
-            btnRegisterEmployee.Click += BtnRegisterEmployee_Click;
+            registerEmployeeBtn.Click += BtnRegisterEmployee_Click;
+            reportGenerationBtn.Click += BtnReportGeneration_Click;
+        }
+
+        private void BtnReportGeneration_Click(object sender, EventArgs e)
+        {
+            managerStoreReport = new ManagerStoreReport(context);
+            managerStoreReport.Show();
         }
 
         private void BtnRegisterEmployee_Click(object sender, EventArgs e)

@@ -12,6 +12,9 @@ using WatchShopDAL;
 
 namespace WatchShopFormsApp
 {
+    /// <summary>
+    /// Registering an Employee
+    /// </summary>
     public partial class AddEmployee : Form
     {
         private WatchShopEntities context;
@@ -30,19 +33,23 @@ namespace WatchShopFormsApp
             
 
 
-            // when click to item of major list box
+            // when click to item of student list box
             empRoleListBox.SelectedIndexChanged += (s, e) =>
             {
                 selectedRoles = context.Roles.Local.ToArray()[empRoleListBox.SelectedIndex];
 
             };
 
-
+            // Validation to check none of the fields are empty
             registerButton.Click += (s, e) =>
             {
                 if (empNameTextBox.Text == "" || passwordTextBox.Text == "" || empEmailTextBox.Text == "" || phnNoTextBox.Text == "" || empAddressTextBox.Text=="")
                 {
                     MessageBox.Show("Address, Password, Email, Phone number cannot be empty");
+                }
+                else if(context.Employees.Local.ToList().Where(p => p.Email.Equals(empEmailTextBox.Text)).Count() > 0)
+                {
+                        MessageBox.Show("Employee Already Exixts with the same email Id. Please enter different Email ID");
                 }
                 else
                 {
@@ -67,9 +74,10 @@ namespace WatchShopFormsApp
                     }
                     var newRow = context.Set<Employee>();
                     newRow.Add(newEmp);
+                    MessageBox.Show("Employee Added Successfully");
                     context.Employees.Add(newEmp);
                     context.SaveChanges();
-
+                    renderListBox();
                 }
             };
 
@@ -79,7 +87,7 @@ namespace WatchShopFormsApp
 
         public void renderListBox()
         {
-           
+            empNameTextBox.Text = "";
             empAddressTextBox.Text = "";
             passwordTextBox.Text = "";
             empEmailTextBox.Text = "";

@@ -40,7 +40,7 @@ namespace WatchShopFormsApp
             };
 
 
-            // when click to item of major list box
+            // when click to item of student list box
              updateEmpRoleListBox.SelectedIndexChanged += (s, e) =>
              {
                  selectedRoles = context.Roles.Local.ToArray()[updateEmpRoleListBox.SelectedIndex];

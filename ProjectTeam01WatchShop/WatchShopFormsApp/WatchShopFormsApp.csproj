@@ -80,6 +80,12 @@
     <Compile Include="ManagerForm.Designer.cs">
       <DependentUpon>ManagerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerStoreReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerStoreReport.Designer.cs">
+      <DependentUpon>ManagerStoreReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegisterEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,12 @@
     <Compile Include="SalesAssociateForm.Designer.cs">
       <DependentUpon>SalesAssociateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesReport.Designer.cs">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="StoreDashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +115,12 @@
     </Compile>
     <Compile Include="UpdateEmployee.Designer.cs">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmpPersonalDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateEmpPersonalDetails.Designer.cs">
+      <DependentUpon>UpdateEmpPersonalDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="WatchShopMainFormApp.cs">
       <SubType>Form</SubType>
@@ -124,17 +142,26 @@
     <EmbeddedResource Include="ManagerForm.resx">
       <DependentUpon>ManagerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManagerStoreReport.resx">
+      <DependentUpon>ManagerStoreReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegisterEmployee.resx">
       <DependentUpon>RegisterEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SalesAssociateForm.resx">
       <DependentUpon>SalesAssociateForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SalesReport.resx">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StoreDashboardForm.resx">
       <DependentUpon>StoreDashboardForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateEmployee.resx">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateEmpPersonalDetails.resx">
+      <DependentUpon>UpdateEmpPersonalDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WatchShopMainFormApp.resx">
       <DependentUpon>WatchShopMainFormApp.cs</DependentUpon>
