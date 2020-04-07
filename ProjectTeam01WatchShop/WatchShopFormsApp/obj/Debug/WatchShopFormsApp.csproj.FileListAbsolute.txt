@@ -66,3 +66,8 @@ C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\
 C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.UpdateEmpPersonalDetails.resources
 C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.SalesReport.resources
 C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.ManagerStoreReport.resources
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.AddEmployee.resources
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.ManagerStoreReport.resources
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.SalesReport.resources
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.UpdateEmployee.resources
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.UpdateEmpPersonalDetails.resources

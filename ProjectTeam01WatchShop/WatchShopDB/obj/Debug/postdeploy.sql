@@ -23,7 +23,8 @@ INSERT INTO Products([Brand],[Description],[Quantity],[Price]) VALUES('b','adf',
 INSERT INTO Products([Brand],[Description],[Quantity],[Price]) VALUES('c','gfdf',333,3.3);
 
 GO
-
+/*
 INSERT INTO Employees([Name], [RoleId]) VALUES('Nam',2);
 
+go*/
 GO
