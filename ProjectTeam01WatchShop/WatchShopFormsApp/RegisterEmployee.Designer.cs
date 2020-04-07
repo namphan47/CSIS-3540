@@ -39,27 +39,30 @@
             // employeesDataGridView
             // 
             this.employeesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.employeesDataGridView.Location = new System.Drawing.Point(12, 250);
+            this.employeesDataGridView.Location = new System.Drawing.Point(11, 20);
+            this.employeesDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.employeesDataGridView.Name = "employeesDataGridView";
             this.employeesDataGridView.RowHeadersWidth = 51;
             this.employeesDataGridView.RowTemplate.Height = 24;
-            this.employeesDataGridView.Size = new System.Drawing.Size(962, 451);
+            this.employeesDataGridView.Size = new System.Drawing.Size(722, 366);
             this.employeesDataGridView.TabIndex = 11;
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(722, 723);
+            this.updateButton.Location = new System.Drawing.Point(541, 434);
+            this.updateButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(129, 49);
+            this.updateButton.Size = new System.Drawing.Size(97, 40);
             this.updateButton.TabIndex = 16;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = true;
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(114, 723);
+            this.addButton.Location = new System.Drawing.Point(145, 434);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(128, 49);
+            this.addButton.Size = new System.Drawing.Size(96, 40);
             this.addButton.TabIndex = 17;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
@@ -67,22 +70,24 @@
             // empRolesDataGridView
             // 
             this.empRolesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.empRolesDataGridView.Location = new System.Drawing.Point(1000, 24);
+            this.empRolesDataGridView.Location = new System.Drawing.Point(750, 20);
+            this.empRolesDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.empRolesDataGridView.Name = "empRolesDataGridView";
             this.empRolesDataGridView.RowHeadersWidth = 51;
             this.empRolesDataGridView.RowTemplate.Height = 24;
-            this.empRolesDataGridView.Size = new System.Drawing.Size(432, 234);
+            this.empRolesDataGridView.Size = new System.Drawing.Size(324, 190);
             this.empRolesDataGridView.TabIndex = 19;
             // 
             // RegisterEmployee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1471, 808);
+            this.ClientSize = new System.Drawing.Size(1091, 499);
             this.Controls.Add(this.empRolesDataGridView);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.employeesDataGridView);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "RegisterEmployee";
             this.Text = "RegisterEmployee";
             ((System.ComponentModel.ISupportInitialize)(this.employeesDataGridView)).EndInit();
