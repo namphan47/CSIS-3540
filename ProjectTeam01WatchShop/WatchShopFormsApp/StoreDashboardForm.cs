@@ -88,7 +88,7 @@ namespace WatchShopFormsApp
                 selectedProduct = context.Products.Local.ToList().Where(x => x.Id == id).FirstOrDefault();
                 labelBranch.Text = selectedProduct.Brand;
                 labelDescription.Text = selectedProduct.Description;
-                labelPrice.Text = selectedProduct.Price.ToString();
+                labelPrice.Text = selectedProduct.Price.ToString("C2");
 
             }
 

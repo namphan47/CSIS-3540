@@ -81,9 +81,11 @@ namespace WatchShopFormsApp
             renderListBox();
         }
 
+        /// <summary>
+        /// Get all the Employee Data in the list box.
+        /// </summary>
         public void renderListBox()
         {
-           
             var list = context.Employees.Local
               .Select(x => x.Name.ToString());
 
@@ -95,10 +97,7 @@ namespace WatchShopFormsApp
             updateEmpEmailTextBox.Text = "";
             updatePhnNoTextBox.Text = "";
             
-           
-
-
-           var empRolesList = context.Roles.Local.Select(x => x.Type);
+            var empRolesList = context.Roles.Local.Select(x => x.Type);
             updateEmpRoleListBox.Items.Clear();
             updateEmpRoleListBox.Items.AddRange(empRolesList.ToArray());
 

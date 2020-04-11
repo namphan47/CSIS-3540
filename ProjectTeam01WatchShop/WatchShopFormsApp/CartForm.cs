@@ -72,9 +72,9 @@ namespace WatchShopFormsApp
             taxTotal = subTotal * 10 / 100;
             total = subTotal + taxTotal;
 
-            labelSubTotal.Text = subTotal.ToString();
-            labelTaxTotal.Text = taxTotal.ToString();
-            labelTotal.Text = total.ToString();
+            labelSubTotal.Text = subTotal.ToString("C2");
+            labelTaxTotal.Text = taxTotal.ToString("C2");
+            labelTotal.Text = total.ToString("C2");
         }
 
         /// <summary>

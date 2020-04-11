@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WatchShopDAL;
 
@@ -33,6 +30,9 @@ namespace WatchShopFormsApp
             ResetControlsToDefault();
         }
 
+        /// <summary>
+        /// Get the transaction and order records from the database
+        /// </summary>
         private void GetDataFromDB()
         {
             context.Transactions.Load();
@@ -50,6 +50,9 @@ namespace WatchShopFormsApp
                   });
             orderDetailsList = studentRegistrations.ToList();
         }
+        /// <summary>
+        /// Set the Initial Grid
+        /// </summary>
         private void InititializeDataGridView()
         {
            
@@ -69,6 +72,9 @@ namespace WatchShopFormsApp
             salesReportDataGridView.Columns.Clear();
         }
        
+        /// <summary>
+        /// Reset all the textboxes and list to default
+        /// </summary>
         private void ResetControlsToDefault()
         {
 
@@ -83,6 +89,10 @@ namespace WatchShopFormsApp
 
         }
 
+        /// <summary>
+        /// By Default selecting all the elements from the list
+        /// </summary>
+        /// <param name="listBox"></param>
         private void resetListView(ListBox listBox)
         {
             listBox.SelectedIndexChanged -= ListBox_SelectedIndexChanged;
@@ -91,11 +101,19 @@ namespace WatchShopFormsApp
             listBox.SelectedIndexChanged += ListBox_SelectedIndexChanged;
         }
 
+        /// <summary>
+        /// On change of data from list change the grid view accordingly
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             DisplaySalesReport();
         }
 
+        /// <summary>
+        /// Filter the records based on the filteration from the list boxes and calculate Total Transactions, Total Product Price and Total Quantity Sold
+        /// </summary>
         private void DisplaySalesReport()
         {
             List<String> employeeNameList = new List<String>();
@@ -118,7 +136,7 @@ namespace WatchShopFormsApp
                 totalQuantitySold = orderDetailsDataList.Select(q => q.Quantity).Sum();
             }
             totalTransactionsTextBox.Text = totalTransactions.ToString();
-            totalAmountProductsTextBox.Text = totalProductPrice.ToString();
+            totalAmountProductsTextBox.Text = totalProductPrice.ToString("C2");
             totalQuantityTextBox.Text = totalQuantitySold.ToString();
 
         }
@@ -130,6 +148,10 @@ namespace WatchShopFormsApp
                 filterList.Add(selectedListBox.SelectedItems[index].ToString());
             }
         }
+
+        /// <summary>
+        /// Get listbox data from the database
+        /// </summary>
         private void InitializeList()
         {
             empNameListBox.Items.Clear();

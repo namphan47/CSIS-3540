@@ -47,6 +47,7 @@ namespace WatchShopFormsApp
                 {
                     MessageBox.Show("Address, Password, Email, Phone number cannot be empty");
                 }
+                // Validate that same email Id does not exist
                 else if(context.Employees.Local.ToList().Where(p => p.Email.Equals(empEmailTextBox.Text)).Count() > 0)
                 {
                         MessageBox.Show("Employee Already Exixts with the same email Id. Please enter different Email ID");
@@ -85,6 +86,9 @@ namespace WatchShopFormsApp
             renderListBox();
         }
 
+        /// <summary>
+        /// Get all the employee list and empty all the other textboxes
+        /// </summary>
         public void renderListBox()
         {
             empNameTextBox.Text = "";

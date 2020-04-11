@@ -52,6 +52,7 @@
             // 
             this.totalTaxTextBox.Location = new System.Drawing.Point(208, 571);
             this.totalTaxTextBox.Name = "totalTaxTextBox";
+            this.totalTaxTextBox.ReadOnly = true;
             this.totalTaxTextBox.Size = new System.Drawing.Size(100, 22);
             this.totalTaxTextBox.TabIndex = 1;
             // 
@@ -59,6 +60,7 @@
             // 
             this.totalAmtBeforeTextBox.Location = new System.Drawing.Point(688, 571);
             this.totalAmtBeforeTextBox.Name = "totalAmtBeforeTextBox";
+            this.totalAmtBeforeTextBox.ReadOnly = true;
             this.totalAmtBeforeTextBox.Size = new System.Drawing.Size(100, 22);
             this.totalAmtBeforeTextBox.TabIndex = 2;
             // 
@@ -66,6 +68,7 @@
             // 
             this.totalAmtAfterTextBox.Location = new System.Drawing.Point(1179, 571);
             this.totalAmtAfterTextBox.Name = "totalAmtAfterTextBox";
+            this.totalAmtAfterTextBox.ReadOnly = true;
             this.totalAmtAfterTextBox.Size = new System.Drawing.Size(100, 22);
             this.totalAmtAfterTextBox.TabIndex = 3;
             // 

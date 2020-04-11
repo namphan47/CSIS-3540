@@ -37,7 +37,7 @@
             this.upEmpAddressTextBox = new System.Windows.Forms.TextBox();
             this.labelEmpPassword = new System.Windows.Forms.Label();
             this.labelEmpAddress = new System.Windows.Forms.Label();
-            this.checkEmpButton = new System.Windows.Forms.Button();
+            this.getEmpDetailsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // upEmpEmailTextBox
@@ -66,7 +66,7 @@
             // labelPhnNo
             // 
             this.labelPhnNo.AutoSize = true;
-            this.labelPhnNo.Location = new System.Drawing.Point(554, 402);
+            this.labelPhnNo.Location = new System.Drawing.Point(545, 402);
             this.labelPhnNo.Name = "labelPhnNo";
             this.labelPhnNo.Size = new System.Drawing.Size(137, 17);
             this.labelPhnNo.TabIndex = 36;
@@ -74,9 +74,9 @@
             // 
             // updateEmpButton
             // 
-            this.updateEmpButton.Location = new System.Drawing.Point(653, 477);
+            this.updateEmpButton.Location = new System.Drawing.Point(653, 475);
             this.updateEmpButton.Name = "updateEmpButton";
-            this.updateEmpButton.Size = new System.Drawing.Size(133, 37);
+            this.updateEmpButton.Size = new System.Drawing.Size(169, 48);
             this.updateEmpButton.TabIndex = 35;
             this.updateEmpButton.Text = "Update Employee";
             this.updateEmpButton.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@
             // labelEmpPassword
             // 
             this.labelEmpPassword.AutoSize = true;
-            this.labelEmpPassword.Location = new System.Drawing.Point(538, 160);
+            this.labelEmpPassword.Location = new System.Drawing.Point(545, 160);
             this.labelEmpPassword.Name = "labelEmpPassword";
             this.labelEmpPassword.Size = new System.Drawing.Size(135, 17);
             this.labelEmpPassword.TabIndex = 31;
@@ -107,27 +107,27 @@
             // labelEmpAddress
             // 
             this.labelEmpAddress.AutoSize = true;
-            this.labelEmpAddress.Location = new System.Drawing.Point(545, 328);
+            this.labelEmpAddress.Location = new System.Drawing.Point(545, 325);
             this.labelEmpAddress.Name = "labelEmpAddress";
             this.labelEmpAddress.Size = new System.Drawing.Size(126, 17);
             this.labelEmpAddress.TabIndex = 30;
             this.labelEmpAddress.Text = "Employee Address";
             // 
-            // checkEmpButton
+            // getEmpDetailsButton
             // 
-            this.checkEmpButton.Location = new System.Drawing.Point(653, 222);
-            this.checkEmpButton.Name = "checkEmpButton";
-            this.checkEmpButton.Size = new System.Drawing.Size(110, 39);
-            this.checkEmpButton.TabIndex = 40;
-            this.checkEmpButton.Text = "Check Employee";
-            this.checkEmpButton.UseVisualStyleBackColor = true;
+            this.getEmpDetailsButton.Location = new System.Drawing.Point(653, 222);
+            this.getEmpDetailsButton.Name = "getEmpDetailsButton";
+            this.getEmpDetailsButton.Size = new System.Drawing.Size(169, 40);
+            this.getEmpDetailsButton.TabIndex = 40;
+            this.getEmpDetailsButton.Text = "Get Employee Details";
+            this.getEmpDetailsButton.UseVisualStyleBackColor = true;
             // 
             // UpdateEmpPersonalDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1423, 789);
-            this.Controls.Add(this.checkEmpButton);
+            this.Controls.Add(this.getEmpDetailsButton);
             this.Controls.Add(this.upEmpEmailTextBox);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.upPhnNoTextBox);
@@ -155,6 +155,6 @@
         private System.Windows.Forms.TextBox upEmpAddressTextBox;
         private System.Windows.Forms.Label labelEmpPassword;
         private System.Windows.Forms.Label labelEmpAddress;
-        private System.Windows.Forms.Button checkEmpButton;
+        private System.Windows.Forms.Button getEmpDetailsButton;
     }
 }

@@ -9,3 +9,14 @@ C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\obj\Debug\WatchShop
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\obj\Debug\WatchShopDAL.csproj.CopyComplete
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\obj\Debug\WatchShopDAL.dll
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\obj\Debug\WatchShopDAL.pdb
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\WatchShopDAL.dll.config
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\WatchShopDAL.dll
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\WatchShopDAL.pdb
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\EntityFramework.dll
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\EntityFramework.xml
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\obj\Debug\WatchShopDAL.csprojAssemblyReference.cache
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\obj\Debug\WatchShopDAL.csproj.CopyComplete
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\obj\Debug\WatchShopDAL.dll
+C:\Data1\Client-Server Systems\FinalTermGitHub\CSIS-3540\ProjectTeam01WatchShop\WatchShopDAL\obj\Debug\WatchShopDAL.pdb

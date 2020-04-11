@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WatchShopDAL;
 
@@ -28,13 +23,15 @@ namespace WatchShopFormsApp
 
         }
 
+        /// <summary>
+        /// Click Events for Add and Update
+        /// </summary>
         private void InititializeOthers()
         {
             addButton.Click += AddButton_Click;
             updateButton.Click += ButtonUpdate_Click;
         }
 
-        
 
         private void RegisterEmployee_Load(object sender, EventArgs e)
         {
@@ -42,25 +39,11 @@ namespace WatchShopFormsApp
         }
 
         private void SeedRegistrationDataTables()
-        {
-
-            // reset the db
-            //context.Database.Delete();
-            //context.Database.Create();
-
-            //context.SaveChanges();
-
-            // another way to reinitialize the database, resetting everything and zeroing out data
-
-            //Database.SetInitializer(new DropCreateDatabaseAlways<StudentRegistrationEntities>());
-            //context.Database.Initialize(true);        
+        {     
             context.Roles.Load();
             context.Employees.Load();
-
-
         }
 
-       
 
         private void AddButton_Click(object sender, EventArgs e)
         {
@@ -74,6 +57,9 @@ namespace WatchShopFormsApp
             updateEmployee.Show();
         }
 
+        /// <summary>
+        /// Get all the data related to employees
+        /// </summary>
         private void InititializeDataGridView()
         {
             employeesDataGridView.DataSource = context.Employees.Local.ToBindingList();

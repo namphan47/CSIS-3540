@@ -21,36 +21,46 @@ namespace WatchShopFormsApp
             InitializeOthers();
         }
 
+        /// <summary>
+        /// Initialize GetEmployeeDetails and UpdateEmployeeDetails Button
+        /// </summary>
         private void InitializeOthers()
         {
-            Employee employee = null; ;
-
-
-            checkEmpButton.Click += (s, e) =>
+            Employee employee = null;
+            // Check whether employee exists with the same emailId and password
+            getEmpDetailsButton.Click += (s, e) =>
             {
                 string empEmail = upEmpEmailTextBox.Text.ToString();
                 string empPassword = upPasswordTextBox.Text.ToString();
-                employee = context.Employees.Local.Select(x => x).Where(x => x.Email.Equals(empEmail)).Where(x => x.Password.Equals(empPassword)).FirstOrDefault();
-                if (null != employee)
+                if (empEmail == "" || empPassword == "")
                 {
-                    upEmpAddressTextBox.ReadOnly = false;
-                    upPasswordTextBox.ReadOnly = false;
-                    upEmpEmailTextBox.ReadOnly = false;
-                    upPhnNoTextBox.ReadOnly = false;
-                    updateEmpButton.Enabled = true;
-                    upEmpAddressTextBox.Text = employee.Address;
-                    upPasswordTextBox.Text = employee.Password;
-                    upEmpEmailTextBox.Text = employee.Email;
-                    upPhnNoTextBox.Text = employee.PhoneNo;
+                    MessageBox.Show("Please enter Employee Email and Password");
                 }
                 else
                 {
-                    MessageBox.Show("No such Employee Exists");
-                    
+                    employee = context.Employees.Local.Select(x => x).Where(x => x.Email.Equals(empEmail)).Where(x => x.Password.Equals(empPassword)).FirstOrDefault();
+                    if (null != employee)
+                    {
+                        upEmpAddressTextBox.ReadOnly = false;
+                        upPasswordTextBox.ReadOnly = false;
+                        upEmpEmailTextBox.ReadOnly = false;
+                        upPhnNoTextBox.ReadOnly = false;
+                        updateEmpButton.Enabled = true;
+                        upEmpAddressTextBox.Text = employee.Address;
+                        upPasswordTextBox.Text = employee.Password;
+                        upEmpEmailTextBox.Text = employee.Email;
+                        upPhnNoTextBox.Text = employee.PhoneNo;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No such Employee Exists");
+
+                    }
                 }
 
             };
 
+            // Update Employee Record
             updateEmpButton.Click += (s, e) =>
             {
                 if (upEmpAddressTextBox.Text == "" || upPasswordTextBox.Text == "" || upEmpEmailTextBox.Text == "" || upPhnNoTextBox.Text == "")
@@ -80,6 +90,9 @@ namespace WatchShopFormsApp
             resetFields();
         }
 
+        /// <summary>
+        /// Reset all the textboxes
+        /// </summary>
         private void resetFields()
         {
             upEmpAddressTextBox.ReadOnly = true;

@@ -38,6 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.resetButton = new System.Windows.Forms.Button();
+            this.employeesNameLabel = new System.Windows.Forms.Label();
+            this.brandNamesLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.salesReportDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,6 +75,7 @@
             // 
             this.totalQuantityTextBox.Location = new System.Drawing.Point(299, 460);
             this.totalQuantityTextBox.Name = "totalQuantityTextBox";
+            this.totalQuantityTextBox.ReadOnly = true;
             this.totalQuantityTextBox.Size = new System.Drawing.Size(100, 22);
             this.totalQuantityTextBox.TabIndex = 3;
             // 
@@ -80,6 +83,7 @@
             // 
             this.totalTransactionsTextBox.Location = new System.Drawing.Point(735, 457);
             this.totalTransactionsTextBox.Name = "totalTransactionsTextBox";
+            this.totalTransactionsTextBox.ReadOnly = true;
             this.totalTransactionsTextBox.Size = new System.Drawing.Size(100, 22);
             this.totalTransactionsTextBox.TabIndex = 4;
             // 
@@ -87,6 +91,7 @@
             // 
             this.totalAmountProductsTextBox.Location = new System.Drawing.Point(1241, 460);
             this.totalAmountProductsTextBox.Name = "totalAmountProductsTextBox";
+            this.totalAmountProductsTextBox.ReadOnly = true;
             this.totalAmountProductsTextBox.Size = new System.Drawing.Size(100, 22);
             this.totalAmountProductsTextBox.TabIndex = 5;
             // 
@@ -126,11 +131,31 @@
             this.resetButton.Text = "Reset";
             this.resetButton.UseVisualStyleBackColor = true;
             // 
+            // employeesNameLabel
+            // 
+            this.employeesNameLabel.AutoSize = true;
+            this.employeesNameLabel.Location = new System.Drawing.Point(296, 589);
+            this.employeesNameLabel.Name = "employeesNameLabel";
+            this.employeesNameLabel.Size = new System.Drawing.Size(118, 17);
+            this.employeesNameLabel.TabIndex = 10;
+            this.employeesNameLabel.Text = "Employees Name";
+            // 
+            // brandNamesLabel
+            // 
+            this.brandNamesLabel.AutoSize = true;
+            this.brandNamesLabel.Location = new System.Drawing.Point(767, 589);
+            this.brandNamesLabel.Name = "brandNamesLabel";
+            this.brandNamesLabel.Size = new System.Drawing.Size(87, 17);
+            this.brandNamesLabel.TabIndex = 11;
+            this.brandNamesLabel.Text = "Brand Name";
+            // 
             // SalesReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1396, 765);
+            this.Controls.Add(this.brandNamesLabel);
+            this.Controls.Add(this.employeesNameLabel);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -161,5 +186,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button resetButton;
+        private System.Windows.Forms.Label employeesNameLabel;
+        private System.Windows.Forms.Label brandNamesLabel;
     }
 }

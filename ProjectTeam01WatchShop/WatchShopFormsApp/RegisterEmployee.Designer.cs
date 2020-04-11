@@ -39,11 +39,11 @@
             // employeesDataGridView
             // 
             this.employeesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.employeesDataGridView.Location = new System.Drawing.Point(12, 250);
+            this.employeesDataGridView.Location = new System.Drawing.Point(12, 24);
             this.employeesDataGridView.Name = "employeesDataGridView";
             this.employeesDataGridView.RowHeadersWidth = 51;
             this.employeesDataGridView.RowTemplate.Height = 24;
-            this.employeesDataGridView.Size = new System.Drawing.Size(962, 451);
+            this.employeesDataGridView.Size = new System.Drawing.Size(962, 677);
             this.employeesDataGridView.TabIndex = 11;
             // 
             // updateButton
