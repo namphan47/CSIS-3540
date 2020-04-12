@@ -104,6 +104,7 @@ namespace WatchShopFormsApp
             dataGridViewProduct.ReadOnly = true;
             dataGridViewProduct.AllowUserToAddRows = false;
             dataGridViewProduct.AllowUserToDeleteRows = false;
+            dataGridViewProduct.Sort(dataGridViewProduct.Columns[0], ListSortDirection.Ascending);
 
             dataGridViewProduct.SelectionChanged -= OnRowChange;
             dataGridViewProduct.SelectionChanged += OnRowChange;
@@ -111,21 +112,33 @@ namespace WatchShopFormsApp
 
         private void OnRowRemoved(object sender, EventArgs e)
         {
-            //try
-            //{
-            if(selectedProduct != null)
+            Product tmpP = selectedProduct;
+            try
             {
-                context.Products.Remove(selectedProduct);
-                context.SaveChanges();
+                if (selectedProduct != null)
+                {
+                    context.Products.Local.Remove(selectedProduct);
+                    context.SaveChanges();
+                    selectedProduct = null;
+                }
+
+            }
+            catch
+            {
+                MessageBox.Show("Error: Cannot Remove this Product.");
+                
+                foreach (var entity in context.ChangeTracker.Entries())
+                {
+                    entity.Reload();
+                }
+                
+                list.Add(tmpP);
+               
+                list.ResetBindings();
+    
+                dataGridViewProduct.Sort(dataGridViewProduct.Columns[0], ListSortDirection.Ascending);
             }
 
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Error: Cannot update the database - exiting");
-            //    Environment.Exit(1);
-            //}
-          
         }
 
         /// <summary>
@@ -156,7 +169,7 @@ namespace WatchShopFormsApp
             {
 
             }
-           
+
 
         }
     }
