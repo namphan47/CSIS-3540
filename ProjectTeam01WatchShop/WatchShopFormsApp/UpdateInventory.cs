@@ -17,10 +17,12 @@ namespace WatchShopFormsApp
         private WatchShopEntities context;
         private Product selectedProduct;
         private BindingList<Product> list;
-        public UpdateInventory(WatchShopEntities context)
+        public UpdateInventory(WatchShopEntities c)
         {
             InitializeComponent();
-            this.context = context;
+            context = c;
+
+            context.Products.Load();
 
             // init table
             InitTable();
@@ -28,9 +30,14 @@ namespace WatchShopFormsApp
             // button listener
             buttonNew.Click += OnNew;
             buttonSave.Click += OnSave;
+            buttonDelete.Click += OnRowRemoved;
 
         }
-
+        /// <summary>
+        /// save listner
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnSave(object sender, EventArgs e)
         {
             if (dataGridViewProduct.SelectedRows.Count > 0)
@@ -90,17 +97,35 @@ namespace WatchShopFormsApp
         private void InitTable()
         {
             list = context.Products.Local.ToBindingList();
-            dataGridViewProduct.DataSource = list;            
+            dataGridViewProduct.DataSource = list;
             dataGridViewProduct.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewProduct.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridViewProduct.MultiSelect = false;
             dataGridViewProduct.ReadOnly = true;
             dataGridViewProduct.AllowUserToAddRows = false;
+            dataGridViewProduct.AllowUserToDeleteRows = false;
 
             dataGridViewProduct.SelectionChanged -= OnRowChange;
             dataGridViewProduct.SelectionChanged += OnRowChange;
+        }
 
+        private void OnRowRemoved(object sender, EventArgs e)
+        {
+            //try
+            //{
+            if(selectedProduct != null)
+            {
+                context.Products.Remove(selectedProduct);
+                context.SaveChanges();
+            }
 
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("Error: Cannot update the database - exiting");
+            //    Environment.Exit(1);
+            //}
+          
         }
 
         /// <summary>
@@ -110,20 +135,28 @@ namespace WatchShopFormsApp
         /// <param name="e"></param>
         private void OnRowChange(object sender, EventArgs e)
         {
-            if (dataGridViewProduct.SelectedRows.Count > 0)
+            try
             {
-                DataGridViewRow row = dataGridViewProduct.SelectedRows[0];
-                long id = long.Parse(row.Cells[0].Value.ToString());
+                if (dataGridViewProduct.SelectedRows.Count > 0)
+                {
+                    DataGridViewRow row = dataGridViewProduct.SelectedRows[0];
+                    long id = long.Parse(row.Cells[0].Value.ToString());
 
-                selectedProduct = context.Products.Local.ToList().Where(x => x.Id == id).FirstOrDefault();
+                    selectedProduct = context.Products.Local.ToList().Where(x => x.Id == id).FirstOrDefault();
 
-                labelId.Text = selectedProduct.Id.ToString();
-                textBoxBranch.Text = selectedProduct.Brand;
-                textBoxDescription.Text = selectedProduct.Description;
-                numericUpDownQuantity.Value = decimal.Parse(selectedProduct.Quantity.ToString());
-                numericUpDownPrice.Value = decimal.Parse(selectedProduct.Price.ToString());
+                    labelId.Text = selectedProduct.Id.ToString();
+                    textBoxBranch.Text = selectedProduct.Brand;
+                    textBoxDescription.Text = selectedProduct.Description;
+                    numericUpDownQuantity.Value = decimal.Parse(selectedProduct.Quantity.ToString());
+                    numericUpDownPrice.Value = decimal.Parse(selectedProduct.Price.ToString());
+
+                }
+            }
+            catch
+            {
 
             }
+           
 
         }
     }

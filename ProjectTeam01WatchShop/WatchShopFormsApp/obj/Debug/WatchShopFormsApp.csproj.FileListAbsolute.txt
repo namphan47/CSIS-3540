@@ -71,3 +71,4 @@ C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\Watc
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.SalesReport.resources
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.UpdateEmployee.resources
 C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.UpdateEmpPersonalDetails.resources
+C:\MAMP\htdocs\CSIS-3540\ProjectTeam01WatchShop\WatchShopFormsApp\obj\Debug\WatchShopFormsApp.UpdateInventory.resources
